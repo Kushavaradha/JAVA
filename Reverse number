@@ -1,0 +1,32 @@
+import java.util.*;
+import java.io.*;
+class Reverse
+{
+	public static void main(String[] args)
+	{
+	
+	    int a,b=0,c;
+	    char c;
+	    int i;
+	    try
+	    {
+	        Scanner sc=new Scanner(System.in);
+	System.out.println("Enter the number:");
+	        a=sc.nextInt();
+	        
+	
+	        for(i=0;i>=0;i++)
+	        { 
+	            c=a%10;
+                b=b*10+c;
+	
+	        }
+	
+	System.out.println("The Reverse of the number is:"+ b);
+	
+	    } 
+	catch(Exception e)
+	   
+		
+	}
+}

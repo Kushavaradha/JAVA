@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class MyClass {
+  public static void main(String[] args) {
+    int x, y, z;
+    Scanner myObj = new Scanner(System.in); 
+    System.out.println("Type 1st number:");
+    x = myObj.nextInt();
+
+    System.out.println("Type 2nd number:");
+    y = myObj.nextInt();
+    z = x + y;
+    System.out.println("Sum is: " + z);
+  }
+}

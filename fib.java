@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class fib{
+    public static void main(String[] args){
+        int a,b,i,c;
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Enter M: ");
+        a = sc.nextInt();
+        System.out.println("Enter N: ");
+        b = sc.nextInt();
+        System.out.println("Enter K: ");
+        c = sc.nextInt();
+        for(i=a;i<b;i=i+c+1)
+        {
+        System.out.println(i);
+    }
+}
+}

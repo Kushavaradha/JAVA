@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Function1 {
+    public static void main(String[] args){
+        int a;
+        double c,p,t,b,i;
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Enter your age: ");
+        a = sc.nextInt();
+        System.out.println("Enter principle: ");
+        p = sc.nextFloat();
+        System.out.println("Enter Time in years: ");
+        t = sc.nextFloat();
+        if(a>=60){
+            i=12.0;
+            b = (p*t*i)/100;
+            System.out.println("The simple interest is: " + b+" %");
+        }
+        else{
+            i=10.0;
+            b = (p*t*i)/100;
+            System.out.println("The simple interest is: " + b+" %");
+        }
+    }
+
+}

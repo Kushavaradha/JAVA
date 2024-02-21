@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Fib {
+    public static void main(String[] args){
+        int a=0,b=1,s=0,c,d,i,l;
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Enter N: ");
+        c = sc.nextInt();
+        l=2*c;
+        for(i=0;i<l;i++)
+        {
+            d=a+b;
+            a=b;
+            b=d;
+            if(i%2==0)
+            {
+                s=s+d;
+            }
+        }
+        System.out.println("Sum is: "+s);
+    }
+}
