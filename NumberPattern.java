@@ -1,22 +1,22 @@
-import java.util.Scanner;
-
 public class NumberPattern {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter the number to be printed: ");
-        int number = scanner.nextInt();
-
-        System.out.print("Max Number of time printed: ");
-        int maxTimes = scanner.nextInt();
-
-        for (int i = 1; i <= maxTimes; i++) {
+    // Function to print the specified pattern
+    static void printNumberPattern(int n) {
+        for (int i = 1; i <= n; i++) {
+            // Print the current number repeatedly
             for (int j = 1; j <= i; j++) {
-                System.out.print(number + " ");
+                System.out.print(i + "\t");
             }
+            // Move to the next line
             System.out.println();
         }
+    }
 
-        scanner.close();
+    public static void main(String[] args) {
+        // Specify the number of rows
+        int numberOfRows = 4;
+
+        // Print the specified pattern
+        printNumberPattern(numberOfRows);
     }
 }
