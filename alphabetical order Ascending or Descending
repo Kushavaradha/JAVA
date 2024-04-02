@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class NameSorter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        List<String> names = new ArrayList<>();
+
+        System.out.println("Enter names (press enter to stop):");
+        while (true) {
+            String name = scanner.nextLine().trim();
+            if (name.isEmpty()) {
+                break;
+            }
+            names.add(name);
+        }
+
+        System.out.print("Enter 'asc' for ascending or 'desc' for descending: ");
+        String sortOrder = scanner.nextLine().trim();
+
+        Comparator<String> comparator = sortOrder.equalsIgnoreCase("desc") ? Collections.reverseOrder() : null;
+        names.sort(comparator);
+
+        System.out.println("Sorted names:");
+        names.forEach(System.out::println);
+
+        scanner.close();
+    }
+}
